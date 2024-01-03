@@ -2,16 +2,20 @@
 using Estacionamento;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-float valorInicial;
-float valorHora;
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        float valorInicial;
+        float valorHora;
 
-Console.WriteLine("Seja bem vindo ao sistema de estacionamento!");
-Console.WriteLine("Digite o preço inicial: ");
+        Console.WriteLine("Seja bem vindo ao sistema de estacionamento!");
+        Console.WriteLine("Digite o preço inicial: ");
 
-valorInicial = float.Parse(Console.ReadLine());
+        valorInicial = float.Parse(Console.ReadLine());
 
-Console.WriteLine("Agora digite o preço por hora: ");
+        Console.WriteLine("Agora digite o preço por hora: ");
 
-valorHora = float.Parse(Console.ReadLine());
-
-Estacionamento
+        valorHora = float.Parse(Console.ReadLine());
+    }
+}
